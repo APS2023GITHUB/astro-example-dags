@@ -78,7 +78,7 @@ def load_products():
 
 with DAG(
     dag_id="load_project",
-    schedule="20 04 * * *", 
+    schedule="33 05 * * *", 
     start_date=days_ago(2), 
     default_args=default_args
 ) as dag:
