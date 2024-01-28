@@ -46,8 +46,8 @@ def load_products():
     print(f" Se obtuvo  {products_rows}  Filas")
     products_rows=len(products_df)
     if products_rows>0 :
-        client = bigquery.Client(project='premium-guide-410714')
-        table_id =  "premium-guide-410714.dep_raw.products"
+        client = bigquery.Client(project='lucky-cosine-405900')
+        table_id =  "lucky-cosine-405900.dep_raw.products"
         job_config = bigquery.LoadJobConfig(
             schema=[
                 bigquery.SchemaField("_id", bigquery.enums.SqlTypeNames.STRING),
